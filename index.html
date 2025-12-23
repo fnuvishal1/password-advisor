@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password & Account Policy Advisor | By Vishal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+                    <path d="M16 8C13.2386 8 11 10.2386 11 13V14H10C9.44772 14 9 14.4477 9 15V23C9 23.5523 9.44772 24 10 24H22C22.5523 24 23 23.5523 23 23V15C23 14.4477 22.5523 14 22 14H21V13C21 10.2386 18.7614 8 16 8ZM19 14V13C19 11.3431 17.6569 10 16 10C14.3431 10 13 11.3431 13 13V14H19Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>SecureGuard Advisor</span>
+            </div>
+            <div class="creator">
+                <span class="made-by">Crafted by</span>
+                <span class="creator-name">Vishal</span>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Password & Account Security Advisor</h1>
+            <p class="subtitle">AI-powered security assessment to protect your digital identity</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">81%</span>
+                    <span class="stat-label">of breaches involve weak passwords</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15B</span>
+                    <span class="stat-label">stolen credentials on dark web</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">protection with MFA enabled</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Card -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Security Assessment</h2>
+                <p>Evaluate your password strength and account security posture</p>
+            </div>
+
+            <form id="securityForm">
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="password">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                        </svg>
+                        Enter Password to Evaluate
+                    </label>
+                    <div class="password-input-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="Enter your password..."
+                            required
+                            autocomplete="off"
+                        >
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <svg class="eye-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 4C5 4 1.73 7.11 1 10c.73 2.89 4 6 9 6s8.27-3.11 9-6c-.73-2.89-4-6-9-6zm0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="password-requirements">
+                        <div class="requirement" data-requirement="length">
+                            <span class="requirement-icon">○</span>
+                            <span>At least 12 characters</span>
+                        </div>
+                        <div class="requirement" data-requirement="uppercase">
+                            <span class="requirement-icon">○</span>
+                            <span>Uppercase letters</span>
+                        </div>
+                        <div class="requirement" data-requirement="lowercase">
+                            <span class="requirement-icon">○</span>
+                            <span>Lowercase letters</span>
+                        </div>
+                        <div class="requirement" data-requirement="numbers">
+                            <span class="requirement-icon">○</span>
+                            <span>Numbers</span>
+                        </div>
+                        <div class="requirement" data-requirement="special">
+                            <span class="requirement-icon">○</span>
+                            <span>Special characters (!@#$%^&*)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Questions -->
+                <div class="security-questions">
+                    <h3>Account Security Practices</h3>
+                    
+                    <div class="question-group">
+                        <label class="question-label">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                            </svg>
+                            Do you reuse this password on multiple sites?
+                        </label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="reuse" value="yes" required>
+                                <span class="radio-custom"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="reuse" value="no">
+                                <span class="radio-custom"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-group">
+                        <label class="question-label">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                            </svg>
+                            Do you use a password manager?
+                        </label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="passwordManager" value="yes" required>
+                                <span class="radio-custom"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="passwordManager" value="no">
+                                <span class="radio-custom"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-group">
+                        <label class="question-label">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                            </svg>
+                            Is Multi-Factor Authentication (MFA) enabled?
+                        </label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="mfa" value="yes" required>
+                                <span class="radio-custom"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="mfa" value="no">
+                                <span class="radio-custom"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary" id="analyzeBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
+                    </svg>
+                    Analyze Security Posture
+                </button>
+            </form>
+
+            <!-- Results Section -->
+            <div id="results" class="results" style="display: none;">
+                <div class="results-header">
+                    <h3>Security Assessment Results</h3>
+                    <button class="btn-secondary" id="resetBtn">New Analysis</button>
+                </div>
+
+                <!-- Password Strength -->
+                <div class="strength-section">
+                    <div class="strength-header">
+                        <span class="strength-label">Password Strength</span>
+                        <span class="strength-score" id="strengthScore">0/100</span>
+                    </div>
+                    <div class="strength-meter">
+                        <div class="strength-meter-fill" id="strengthMeterFill"></div>
+                    </div>
+                    <p class="strength-text" id="strengthText"></p>
+                </div>
+
+                <!-- Risk Assessment -->
+                <div class="risk-assessment">
+                    <div class="risk-badge" id="riskBadge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                        <div>
+                            <span class="risk-label">Overall Risk Level</span>
+                            <span class="risk-level" id="riskLevel">CALCULATING...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Recommendations -->
+                <div class="recommendations">
+                    <h4>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+                        </svg>
+                        Personalized Security Recommendations
+                    </h4>
+                    <div id="recommendations" class="recommendation-list"></div>
+                </div>
+
+                <!-- Security Score Breakdown -->
+                <div class="score-breakdown">
+                    <h4>Security Profile Breakdown</h4>
+                    <div class="breakdown-grid" id="breakdownGrid"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="info-card">
+                <div class="info-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                    </svg>
+                </div>
+                <h3>Security First</h3>
+                <p>All analysis happens locally in your browser. Your password never leaves your device.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3>AI-Powered</h3>
+                <p>Advanced algorithms analyze patterns, common weaknesses, and security best practices.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                    </svg>
+                </div>
+                <h3>Educational</h3>
+                <p>Learn security best practices and understand your vulnerabilities with actionable advice.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Built for Security Awareness & User Education</p>
+                <p class="footer-signature">© 2024 SecureGuard Advisor. Developed by <strong>Vishal</strong> | Cybersecurity Portfolio Project</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
